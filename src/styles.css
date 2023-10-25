@@ -1,0 +1,175 @@
+.backimage {
+  opacity: 0.3;
+  z-index: -1;
+}
+.cardbody {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1 {
+  color: #7f461b;
+  text-align: left;
+  font-family: "Montez", cursive;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  margin-left: 8%;
+  margin-top: 1%;
+}
+
+.inputtown {
+  border-radius: 5px;
+  background: transparent;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+  width: 50%;
+}
+
+.submitButton {
+  border-radius: 5px;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+}
+.current {
+  border-radius: 5px;
+  border: 3px inset rgb(197, 194, 194, 0.7);
+  font-style: italic;
+}
+
+.day1 {
+  color: #7f461b;
+  font-size: x-large;
+  font-weight: 500;
+  margin: 0;
+  margin-left: 9%;
+  text-align: left;
+}
+.day2 {
+  color: #7f461b;
+  font-size: large;
+  font-weight: 500;
+  margin: 0;
+}
+.day3 {
+  color: #7f461b;
+  font-size: large;
+  font-weight: 500;
+  margin: 0;
+}
+.day4 {
+  color: #7f461b;
+  font-size: large;
+  font-weight: 500;
+  margin: 0;
+}
+.temp1 {
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 15%;
+}
+.tempUnits {
+  color: #7f461b;
+  font-size: 15px;
+  text-align: right;
+}
+
+.details1 {
+  color: #7f461b;
+  position: static;
+  font-size: 10px;
+  margin: 0;
+  margin-left: 10%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.details2,
+.details3,
+.details4 {
+  color: #7f461b;
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.cbody {
+  height: 8px;
+  padding: 0px 16px;
+}
+
+.groupcards,
+.cardbody1 {
+  background-color: transparent;
+  border-style: none;
+}
+
+.picture-day1 {
+  color: #7f461b;
+  font-size: 100px;
+}
+
+.picture-day2 {
+  color: #7f461b;
+  font-size: 60px;
+}
+
+.picture-day3 {
+  color: #7f461b;
+  font-size: 50px;
+}
+.picture-day4 {
+  color: #7f461b;
+  font-size: 40px;
+}
+
+.temp1 {
+  color: #7f461b;
+  font-size: 40px;
+  margin: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+.temp2 {
+  color: #7f461b;
+  font-weight: 600;
+  font-size: 35px;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 40px;
+  text-align: center;
+}
+.temp3 {
+  color: #7f461b;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 55px;
+  text-align: center;
+}
+.temp4 {
+  color: #7f461b;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.picture-day1 i {
+  margin-top: 60px;
+}
+
+.cardbody1 {
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: #7f461b;
+  border-radius: 0;
+}
