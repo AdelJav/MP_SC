@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +21,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
+
     <title>Weather forecast</title>
   </head>
   <body>
@@ -47,13 +48,15 @@
                 class="inputtown"
               />
               <input type="submit" value="Search" class="submitButton" />
+              <button class="current" id="current">Current</button>
             </form>
+
             <h1>Vienna</h1>
             <p class="day1" id="today">Tuesday, 14:00</p>
-            <p class="details1">
+            <p class="details1" id="details1">
               Mostly cloudy
               <br />
-              Wind 19km/h
+              Wind 19 m/s
               <br />
             </p>
 
@@ -72,10 +75,10 @@
 
                 <div class="card-body cbody">
                   <h5 class="card-title day2" id="day2">Wednesday</h5>
-                  <p class="card-text details2">
+                  <p class="card-text details2" id="details2">
                     Mostly cloudy
                     <br />
-                    Wind 19km/h
+                    Wind 19 m/s
                   </p>
                 </div>
               </div>
@@ -87,10 +90,10 @@
 
                 <div class="card-body cbody">
                   <h5 class="card-title day3" id="day3">Thursday</h5>
-                  <p class="card-text details3">
+                  <p class="card-text details3" id="details3">
                     Mostly cloudy
                     <br />
-                    Wind 19km/h
+                    Wind 19 m/s
                   </p>
                 </div>
               </div>
@@ -102,10 +105,10 @@
 
                 <div class="card-body cbody">
                   <h5 class="card-title day4" id="day4">Friday</h5>
-                  <p class="card-text details4">
+                  <p class="card-text details4" id="details4">
                     Mostly cloudy
                     <br />
-                    Wind 19km/h
+                    Wind 19 m/s
                   </p>
                 </div>
               </div>
