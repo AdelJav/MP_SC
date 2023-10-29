@@ -173,3 +173,11 @@ h1 {
   border-color: #7f461b;
   border-radius: 0;
 }
+.by {
+  color: #7f461b;
+}
+
+.opensource {
+  margin-left: 25%;
+  font-size: 20px;
+}
