@@ -96,25 +96,21 @@ function showDatainC(response) {
     .querySelector("#pic1")
     .classList.remove(document.querySelector("#pic1").classList[1]);
   document.querySelector("#pic1").classList.add(updatedPic1);
-  console.log(document.querySelector("#pic1"));
 
   document
     .querySelector("#pic2")
     .classList.remove(document.querySelector("#pic2").classList[1]);
   document.querySelector("#pic2").classList.add(updatedPic2);
-  console.log(document.querySelector("#pic2"));
 
   document
     .querySelector("#pic3")
     .classList.remove(document.querySelector("#pic3").classList[1]);
   document.querySelector("#pic3").classList.add(updatedPic3);
-  console.log(document.querySelector("#pic3"));
 
   document
     .querySelector("#pic4")
     .classList.remove(document.querySelector("#pic4").classList[1]);
   document.querySelector("#pic4").classList.add(updatedPic4);
-  console.log(document.querySelector("#pic4"));
 
   updateDayAndTime();
 }
@@ -224,6 +220,7 @@ function showPosition(show) {
   let apiKey = "2daf65f0cdaa917f11026e8a128ce271";
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTown);
+  console.log(apiUrl);
 }
 
 function showTown(response) {
