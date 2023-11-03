@@ -44,6 +44,36 @@ function showDatainC(response) {
   let windDay3 = answerData[2].wind.speed;
   let windDay4 = answerData[3].wind.speed;
 
+  let icons = {
+    "01d": "fa-sun",
+    "02d": "fa-cloud-sun",
+    "03d": "fa-cloud",
+    "04d": "fa-cloud",
+    "09d": "fa-cloud-rain",
+    "10d": "fa-cloud-sun-rain",
+    "11d": "fa-cloud-showers-heavy",
+    "13d": "fa-snowflake",
+    "50d": "fa-smog",
+    "01n": "fa-sun",
+    "02n": "fa-cloud-sun",
+    "03n": "fa-cloud",
+    "04n": "fa-cloud",
+    "09n": "fa-cloud-rain",
+    "10n": "fa-cloud-sun-rain",
+    "11n": "fa-cloud-showers-heavy",
+    "13n": "fa-snowflake",
+    "50n": "fa-smog",
+  };
+
+  let iconDay1 = answerData[0].weather[0].icon;
+  let iconDay2 = answerData[1].weather[0].icon;
+  let iconDay3 = answerData[2].weather[0].icon;
+  let iconDay4 = answerData[3].weather[0].icon;
+  let updatedPic1 = icons[iconDay1];
+  let updatedPic2 = icons[iconDay2];
+  let updatedPic3 = icons[iconDay3];
+  let updatedPic4 = icons[iconDay4];
+
   document.querySelector("#temp1").innerHTML = `${tDay1}°C`;
   document.querySelector("#temp2").innerHTML = `${tDay2}°C`;
   document.querySelector("#temp3").innerHTML = `${tDay3}°C`;
@@ -61,6 +91,31 @@ function showDatainC(response) {
   document.querySelector(
     "#details4"
   ).innerHTML = `${descDay4} <br /> ${windDay4} m/s`;
+
+  document
+    .querySelector("#pic1")
+    .classList.remove(document.querySelector("#pic1").classList[1]);
+  document.querySelector("#pic1").classList.add(updatedPic1);
+  console.log(document.querySelector("#pic1"));
+
+  document
+    .querySelector("#pic2")
+    .classList.remove(document.querySelector("#pic2").classList[1]);
+  document.querySelector("#pic2").classList.add(updatedPic2);
+  console.log(document.querySelector("#pic2"));
+
+  document
+    .querySelector("#pic3")
+    .classList.remove(document.querySelector("#pic3").classList[1]);
+  document.querySelector("#pic3").classList.add(updatedPic3);
+  console.log(document.querySelector("#pic3"));
+
+  document
+    .querySelector("#pic4")
+    .classList.remove(document.querySelector("#pic4").classList[1]);
+  document.querySelector("#pic4").classList.add(updatedPic4);
+  console.log(document.querySelector("#pic4"));
+
   updateDayAndTime();
 }
 
