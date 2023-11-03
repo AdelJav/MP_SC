@@ -34,6 +34,10 @@ function showDatainC(response) {
   let descDay3 = answerData[2].weather[0].description;
   let descDay4 = answerData[3].weather[0].description;
   //console.log(answerData);
+  descDay1 = descDay1.charAt(0).toUpperCase() + descDay1.slice(1);
+  descDay2 = descDay2.charAt(0).toUpperCase() + descDay2.slice(1);
+  descDay3 = descDay3.charAt(0).toUpperCase() + descDay3.slice(1);
+  descDay4 = descDay4.charAt(0).toUpperCase() + descDay4.slice(1);
 
   let windDay1 = answerData[0].wind.speed;
   let windDay2 = answerData[1].wind.speed;
