@@ -220,7 +220,6 @@ function showPosition(show) {
   let apiKey = "2daf65f0cdaa917f11026e8a128ce271";
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTown);
-  console.log(apiUrl);
 }
 
 function showTown(response) {
@@ -232,6 +231,7 @@ function showTown(response) {
   let headingTown = document.querySelector("h1");
   headingTown.innerHTML = town;
   clearSearch();
+  showDatainC();
   updateDayAndTime();
 }
 
