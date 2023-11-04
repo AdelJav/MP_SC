@@ -230,7 +230,7 @@ function showTown(response) {
 
   let headingTown = document.querySelector("h1");
   headingTown.innerHTML = town;
-  showDatainC();
+  showDatainC(response);
   updateDayAndTime();
 }
 
