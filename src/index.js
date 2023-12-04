@@ -4,27 +4,27 @@ function backgroundseason() {
 
   if (month1 === 8 || 9 || 10) {
     document.querySelector("#backpict").innerHTML = `<img
-          src="pictures/autumn2.jpg"
+          src="/pictures/autumn2.jpg"
           class="card-img backimage"
           alt="autumn"
         />`;
   }
   if (month1 === 11 || 0 || 1) {
     document.querySelector("#backpict").innerHTML = `<img
-          src="pictures/winter2.jpg"
+          src="/pictures/winter2.jpg"
           class="card-img backimage"
           alt="autumn"
         />`;
   }
   if (month1 === 2 || 3 || 4) {
     document.querySelector("#backpict").innerHTML = `<img
-          src="pictures/spring2.jpg"
+          src="/pictures/spring2.jpg"
           class="card-img backimage"
           alt="autumn"
         />`;
   } else {
     document.querySelector("#backpict").innerHTML = `<img
-          src="pictures/summer2.jpg"
+          src="/pictures/summer2.jpg"
           class="card-img backimage"
           alt="autumn"
         />`;
