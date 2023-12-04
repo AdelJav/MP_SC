@@ -2,9 +2,29 @@ function backgroundseason() {
   let now = new Date();
   let month1 = now.getMonth();
 
-  if (month1 === 9 || 10 || 11) {
+  if (month1 === 8 || 9 || 10) {
     document.querySelector("#backpict").innerHTML = `<img
           src="pictures/autumn2.jpg"
+          class="card-img backimage"
+          alt="autumn"
+        />`;
+  }
+  if (month1 === 11 || 0 || 1) {
+    document.querySelector("#backpict").innerHTML = `<img
+          src="pictures/winter2.jpg"
+          class="card-img backimage"
+          alt="autumn"
+        />`;
+  }
+  if (month1 === 2 || 3 || 4) {
+    document.querySelector("#backpict").innerHTML = `<img
+          src="pictures/spring2.jpg"
+          class="card-img backimage"
+          alt="autumn"
+        />`;
+  } else {
+    document.querySelector("#backpict").innerHTML = `<img
+          src="pictures/summer2.jpg"
           class="card-img backimage"
           alt="autumn"
         />`;
